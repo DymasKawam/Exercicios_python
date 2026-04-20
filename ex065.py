@@ -12,7 +12,7 @@ while con != 'N':
         cont += 1
         if maior < nú:
             maior = nú
-        elif menor > nú:
+        if menor > nú:
             menor = nú 
     if con != str and con != 'S' and con != 'N':
         while con != 'S' and con != 'N' and con != str:
