@@ -13,6 +13,10 @@ mais18 = homens = menos20 = 0
 while True:
     idade = int(input('Digite a idade da pessoa: '))
     sexo = str(input('Digite o sexo da pessoa [M/F]: ')).upper().strip()[0]
+    if sexo not in "MmFf":
+        print('Digite um sexo valido')
+        while sexo not in "MmFf":
+            sexo = str (input('Digite Seu sexo novamente [M/F]: ')).strip().upper()[0]
     if idade > 18:
         mais18 += 1
     if sexo == 'M':
