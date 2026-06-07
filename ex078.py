@@ -17,9 +17,10 @@ print(f'Na lista {lista}')
 print(f'O maior número foi {maior} na posição: ', end='')
 for c in range(0,len(lista)):
     if lista[c] == maior:
-        print(c, end=' ')
+        print(c, end='...')
 print(f'\nO menor número foi {menor} na posição: ', end='')
 for c in range(0, len(lista)):
     if lista[c] == menor:
-        print(c, end=' ')
-print('\n-=' * 30)
+        print(c, end='...')
+print()
+print('-=' * 30)
