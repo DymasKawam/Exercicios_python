@@ -11,12 +11,12 @@ for i in range (0,9):
     elif c == 2:
         matriz[2].append(valor)
     if l > 2:
-       c += 1 
-    if l > 2:
+        c += 1 
         l = 0
 l = c = 0
 while True:
-    print(f'[{matriz[c][l]}]', end='')
+    
+    print(f'[{matriz[c][l]:^5}]', end='')
     l += 1
     if l > 2:
         print()
