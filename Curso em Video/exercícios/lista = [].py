@@ -54,7 +54,5 @@ while opcao != 6:
         print()
 
     print('-=' * 10)
-=======
     match opcao:
         case opcao == 1:
->>>>>>> 28fafab497966a77a6817c76e9152d0ef4090bd8
