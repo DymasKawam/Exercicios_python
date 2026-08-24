@@ -5,12 +5,11 @@ cont= 0
 soma = []
 multi = []
 
-números = [int(input('número A: ')),int(input('número B: ')) ,int(input('número C: '))
-,int(input('número D: ')) ]
+números = [int(input('número A: ')),int(input('número B: ')),int(input('número C: ')),int(input('número D: ')) ]
 
 for i in range (0,3):
     for c in range(0, 4):
-        if c <= i:
+        if  c <= i:
             continue
         adi = números[i] + números[c]
         mut = números[i] * números[c]

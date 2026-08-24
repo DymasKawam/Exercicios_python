@@ -18,19 +18,6 @@ while pp:
     conti = str(input('Deseja continuar [S/N]: ')).strip()
     if conti in 'Nn':
         pp = False
-
-while opcao != 6:
-    print('-=' * 10)
-        break
-    altura = float(input('Digite a altura: '))
-    if altura <= 0:
-        print('Altura inválida! Digite um valor maior que 0')
-        break
-    lista.append(3.14159 * raio * raio * altura)
-    conti = str(input('Deseja continuar [S/N]: ')).strip()
-    if conti in 'Nn':
-        break
-
 while opcao != 6:
     print('Para ver lista [1]')
     print('Exibir apenas números pares [2]')
@@ -40,19 +27,39 @@ while opcao != 6:
     opcao = int(input('Digite sua opcao: '))
 
     if opcao == 1:
-        print('Os números da lista são: ',end='')
+        print('Os volumes da lista são: ',end='')
         for c in lista:
             print(f' [{c:.2f}]', end='')
         print()
 
     elif opcao == 2:
-        print('Os números pares são: ', end='')
+        print('Os volumes pares são: ', end='')
         for c in lista:
             if c % 2 == 0:
                 print(f'[{c:.2f}]', end='')
-
         print()
 
-    print('-=' * 10)
-    match opcao:
-        case opcao == 1:
+    elif opcao == 3:
+        print('Os volumes impares são: ',end='')
+        for c in lista:
+            if c % 2 != 0:
+                print(f'[{c:.2f}]', end='')  
+        print()
+
+    elif opcao == 4:
+        print('Os volumes pares nas posições ímpares são: ', end='')
+        for i, v in enumerate (lista):
+            if i % 2 != 0:
+                if v % 2 ==0:
+                    print(f'[{v:.2f}]', end='')
+        print()
+    elif opcao == 5:
+        print('Os volumes ímpares nas posições pares são: ', end='')
+        for i, v in enumerate(lista):
+            if i % 2 == 0:
+                if v % 2 != 0:
+                    print(f'[{v:.2f}]', end='')
+        print()
+    elif opcao != 6:
+        print('Opcão inválida! digite novamente.')
+    
