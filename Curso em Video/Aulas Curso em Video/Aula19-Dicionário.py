@@ -65,7 +65,7 @@ for c in range (0,3):
     estado['uf'] = str(input('Unidade Federativa: ')).strip().title()
     estado['sigla'] = str(input('sigla do estado: ')).strip().upper()
     brasil.append(estado.copy())
-
+print(brasil)
 for i in brasil:
     for k, v in i.items():
         print(f'O campo {k} tem valor {v}')
