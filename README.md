@@ -1,2 +1,2 @@
-# Exerc-cios_python
+# Exercicios_python
 Exercicios de python do curso do guanabara.
