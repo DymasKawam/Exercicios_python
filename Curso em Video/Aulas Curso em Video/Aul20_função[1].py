@@ -1,0 +1,15 @@
+def MostraLinha():
+    print('-' *60)
+
+MostraLinha()
+print(f'{'Ola mundo':^50}')
+MostraLinha()
+MostraLinha()
+print(f'{'Despedido':^50}')
+MostraLinha()
+MostraLinha()
+print(f'{'Amor':^50}')
+MostraLinha()
+MostraLinha()
+print(f'{'Hello':^50}')
+MostraLinha()
