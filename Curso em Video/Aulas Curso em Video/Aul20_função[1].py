@@ -34,10 +34,3 @@ def soma(a, b):
 
 soma(b= 3, a= 9)
 '''
-def contador(* num):
-    for valor in num:
-        print(f'[{valor}]', end=' ')
-
-contador(9,5,3,2,6)
-contador(0,3)
-contador(8,8,7)
